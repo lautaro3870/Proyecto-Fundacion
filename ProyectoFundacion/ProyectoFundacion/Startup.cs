@@ -26,15 +26,44 @@ namespace ProyectoFundacion
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo());
+
+            });
+            //le agrego una polictica de cors que acepte todos los origenes de peticiones
+            services.AddCors(o => o.AddPolicy("Prog3", builder =>
+            {
+                builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+
+            }));
+            services.AddRouting(r => r.SuppressCheckForUnhandledSecurityMetadata = true);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("Prog3");
+
+            app.Use((context, next) =>
+            {
+                context.Items["__CorsMiddlewareInvoked"] = true;
+                return next();
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+            });
 
             app.UseHttpsRedirection();
 

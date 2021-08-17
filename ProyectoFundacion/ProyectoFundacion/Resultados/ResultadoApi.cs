@@ -7,5 +7,6 @@ namespace ProyectoFundacion.Resultados
 {
     public class ResultadoApi
     {
+
     }
 }
