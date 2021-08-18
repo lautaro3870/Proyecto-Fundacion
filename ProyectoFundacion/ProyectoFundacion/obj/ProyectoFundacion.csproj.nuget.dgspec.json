@@ -1,24 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win\\Documents\\GitHub\\Proyecto-Fundacion\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion.csproj": {}
+    "C:\\Proyectos\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win\\Documents\\GitHub\\Proyecto-Fundacion\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion.csproj": {
+    "C:\\Proyectos\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win\\Documents\\GitHub\\Proyecto-Fundacion\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion.csproj",
+        "projectUniqueName": "C:\\Proyectos\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion.csproj",
         "projectName": "ProyectoFundacion",
-        "projectPath": "C:\\Users\\Win\\Documents\\GitHub\\Proyecto-Fundacion\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion.csproj",
-        "packagesPath": "C:\\Users\\Win\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win\\Documents\\GitHub\\Proyecto-Fundacion\\ProyectoFundacion\\ProyectoFundacion\\obj\\",
+        "projectPath": "C:\\Proyectos\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion.csproj",
+        "packagesPath": "C:\\Users\\Maxi Farias\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyectos\\ProyectoFundacion\\ProyectoFundacion\\ProyectoFundacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Win\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Maxi Farias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
